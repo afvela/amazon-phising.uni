@@ -1,0 +1,19 @@
+<div class="externalcover">
+    <div [formGroup]="userForm" class="innerform">
+
+      <h1>Amazon</h1>
+      <!-- dividimos el formulario en dos steps, el primero en el que solo introduce el usuario -->
+      <!-- y el segundo en el que introduce la contraseña y manda los datos -->
+      <div class="username" *ngIf="!step2">
+        username: <input type="text" formControlName="username">
+      </div>
+      <div class="username" *ngIf="step2">
+        <span>{{userForm.value.username}}</span>
+      </div>
+      <div class="username" *ngIf="step2">
+        <div>password: <input  type="password" formControlName="password"></div>
+      </div>
+
+      <button (click)="sendData()">Log in</button>
+    </div>
+</div>

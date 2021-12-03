@@ -1,0 +1,28 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerform{
+  box-shadow: black inset;
+  border: solid grey 3px;
+  border-radius: 2%;
+  width: 30%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.externalcover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  margin-bottom: 30px;
+}
